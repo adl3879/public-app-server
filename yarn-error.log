@@ -1,0 +1,62 @@
+Arguments: 
+  /home/adeleye/.nvm/versions/node/v16.16.0/bin/node /home/adeleye/.nvm/versions/node/v16.16.0/bin/yarn
+
+PATH: 
+  /home/adeleye/.bun/bin:/home/adeleye/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/Toyosi Adekanmbi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Toyosi Adekanmbi/AppData/Local/GitHubDesktop/bin:/home/adeleye/go/bin:/usr/local/go/bin:/home/adeleye/.nvm/versions/node/v16.16.0/bin:./node_modules/.bin:/home/adeleye/.deno/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/home/adeleye/Android/tools:/home/adeleye/Android/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@prisma%2fclient: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/home/adeleye/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:141517:19)
+      at Object.onceWrapper (node:events:641:28)
+      at ClientRequest.emit (node:events:527:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:771:9)
+      at Object.onceWrapper (node:events:641:28)
+      at TLSSocket.emit (node:events:539:35)
+      at TLSSocket.Socket._onTimeout (node:net:516:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+    "name": "public-app-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "adeleye",
+    "license": "ISC",
+    "dependencies": {
+      "@graphql-tools/schema": "^9.0.4",
+      "@prisma/client": "^4.4.0",
+      "apollo-server-core": "^3.10.2",
+      "apollo-server-express": "^3.10.2",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.1",
+      "graphql": "^16.6.0",
+      "lodash.merge": "^4.6.2",
+      "ts-node": "^10.9.1"
+    },
+    "devDependencies": {
+      "@types/lodash.merge": "^4.6.7",
+      "nodemon": "^2.0.20",
+      "prisma": "^4.4.0",
+      "typescript": "^4.8.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

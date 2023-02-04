@@ -1,0 +1,11 @@
+directive @auth(allows: [Role]) on OBJECT | FIELD_DEFINITION
+
+type Query {
+    searchUsers(username: String): [User]
+}
+
+type Mutation {
+    createUser(email: String, password: String, roles: [Role]): AuthResponse
+    loginUser(email: String, password: String): AuthResponse
+    updateRole(email: String, roles: [Role]): Boolean @auth(allows: [ADMIN])
+}

@@ -1,0 +1,17 @@
+enum Role {
+    ADMIN
+    USER
+    OWNER
+}
+
+type User {
+    id: ID!
+    email: String!
+    password: String!
+    roles: [Role!]!
+}
+
+type AuthResponse {
+    success: Boolean!
+    token: String
+}
